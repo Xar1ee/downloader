@@ -1,13 +1,19 @@
 import asyncio
 import logging
 import os
+import sys
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.types import BotCommand
 import yt_dlp
-#
+from dotenv import load_dotenv
+
 # --- SOZLAMALAR ---
-TOKEN = "8486364503:AAFmxU38ucOTNvm7eJOech2YqNs6z1pBfmQ"
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+
+
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
@@ -60,7 +66,7 @@ async def cmd_tiktok(message: types.Message):
 async def cmd_youtube(message: types.Message):
     await message.answer("🎥 YouTube Shorts yoki Video linkini yuboring. (Hajmi 50MB dan kam bo'lishi tavsiya etiladi)")
 
-dp.message(Command("help"))
+@dp.message(Command("help"))
 async def cmd_help(message: types.Message):
     await message.answer("Agar sizda videoingiz yuklamnmasa bu Bot yomon degani emas, kodlar yozilgan kompyuter yoki noutbookdagi Wi-Fi yomonligini yoki umuman yoqligini ")
 
@@ -106,5 +112,10 @@ async def main():
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level = logging.INFO,
+        format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        handlers = [
+            logging.FileHandler("bot-log"),
+            logging.StreamHandler(sys.stdout)
+        ])
     asyncio.run(main())
-

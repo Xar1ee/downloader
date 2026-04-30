@@ -1,0 +1,7 @@
+2026-04-30 10:56:33,363 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 10:56:33,485 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 10:58:28,325 - aiogram.event - INFO - Update id=112302042 is handled. Duration 13482 ms by bot id=8486364503
+2026-04-30 11:34:16,111 - aiogram.event - INFO - Update id=112302043 is handled. Duration 760 ms by bot id=8486364503
+2026-04-30 11:34:25,076 - aiogram.event - INFO - Update id=112302044 is handled. Duration 6838 ms by bot id=8486364503
+2026-04-30 11:34:45,575 - aiogram.event - INFO - Update id=112302045 is not handled. Duration 2 ms by bot id=8486364503
+2026-04-30 11:35:24,882 - aiogram.event - INFO - Update id=112302046 is handled. Duration 139 ms by bot id=8486364503

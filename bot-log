@@ -145,3 +145,24 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 2026-04-30 21:31:13,798 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 8486364503)
 2026-04-30 21:34:49,223 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
 2026-04-30 21:34:49,224 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:35:01,375 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8486364503)
+2026-04-30 21:35:36,622 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:35:36,623 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:35:36,623 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:35:36,886 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:35:50,330 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 21:35:50,632 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:35:59,232 - root - ERROR - Xatolik: Telegram server says - Bad Request: failed to get HTTP URL content
+2026-04-30 21:35:59,913 - aiogram.event - INFO - Update id=112302068 is handled. Duration 7413 ms by bot id=8486364503
+2026-04-30 21:36:46,772 - root - ERROR - Xatolik: Telegram server says - Bad Request: failed to get HTTP URL content
+2026-04-30 21:36:50,645 - aiogram.event - INFO - Update id=112302069 is handled. Duration 8910 ms by bot id=8486364503
+2026-04-30 21:41:46,468 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-04-30 21:41:46,469 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:42:08,764 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Превышен таймаут семафора]
+2026-04-30 21:42:08,764 - aiogram.dispatcher - WARNING - Sleep for 1.229599 seconds and try again... (tryings = 1, bot id = 8486364503)
+2026-04-30 21:42:24,454 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8486364503)
+2026-04-30 21:43:15,580 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:43:15,581 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:43:15,582 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:43:15,832 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:43:49,307 - aiogram.event - INFO - Update id=112302070 is not handled. Duration 58529 ms by bot id=8486364503

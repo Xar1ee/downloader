@@ -71,45 +71,36 @@ async def cmd_help(message: types.Message):
     await message.answer("Agar sizda videoingiz yuklamnmasa bu Bot yomon degani emas, kodlar yozilgan kompyuter yoki noutbookdagi Wi-Fi yomonligini yoki umuman yoqligini ")
 
 
-# 2. Yuklab olish o'rniga video URL manzilini olish funksiyasi
-def get_video_url(url):
-    ydl_opts = {
-        'format': 'best',
-        'quiet': True,
-        'no_warnings': True,
-    }
-    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(url, download=False)  # download=False - yuklamaydi, faqat ma'lumot oladi
-        return info.get('url'), info.get('title', 'Video')
-
-
-# Link kelganda ishlovchi handler
+# Link kelganda yuklab olish qismi
 @dp.message(F.text.regexp(r'(https?://[^\s]+)'))
 async def handle_download(message: types.Message):
     url = message.text
     if any(site in url for site in ["instagram.com", "tiktok.com", "youtube.com", "youtu.be"]):
-        status = await message.answer("🔍 Video tayyorlanmoqda...")
+        status = await message.answer("⏳ Video yuklanmoqda (5-15 sekund)...")
+        file_path = None  # Fayl yo'lini boshlang'ich qiymati
 
         try:
-            # Videoni yuklab olmaymiz, shunchaki to'g'ridan-to'g'ri linkini olamiz
-            video_url, title = await asyncio.to_thread(get_video_url, url)
+            # Videoni yuklab olish
+            file_path = await asyncio.to_thread(download_media, url)
 
-            if video_url:
-                # Telegramga videoni URL orqali yuboramiz
-                # Bunda Telegram o'z serveriga videoni sizning serveringizsiz tortib oladi
-                await message.answer_video(
-                    video=video_url,
-                    caption=f"🎥 {title}\n\n✅ @sizning_botingiz"
-                )
-            else:
-                await message.answer("❌ Video manzilini aniqlab bo'lmadi.")
+            # Videoni Telegramga yuborish
+            video = types.FSInputFile(file_path)
+            await message.answer_video(video, caption="Tayyor! ✅ @sizning_botingiz")
 
         except Exception as e:
-            logging.error(f"Xatolik: {e}")
-            await message.answer("❌ Xatolik! Video yopiq yoki format botga mos kelmadi.")
+            logging.error(f"Xatolik yuz berdi: {e}")
+            await message.answer("❌ Xatolik! Video yopiq profilda bo'lishi yoki juda katta bo'lishi mumkin.")
 
         finally:
-            await status.delete()# --- ISHGA TUSHIRISH ---
+            # VIDEO O'CHIRISH QISMI:
+            # Fayl yuklangan bo'lsa va u kompyuterda mavjud bo'lsa - uni o'chiramiz
+            if file_path and os.path.exists(file_path):
+                os.remove(file_path)
+                print(f"Fayl o'chirildi: {file_path}")
+
+            # Status xabarini (⏳...) o'chirish
+            await status.delete()
+# --- ISHGA TUSHIRISH ---
 async def main():
     logging.basicConfig(level=logging.INFO)
 

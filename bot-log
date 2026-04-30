@@ -123,3 +123,25 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 2026-04-30 21:19:15,624 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
 2026-04-30 21:19:28,267 - aiogram.dispatcher - INFO - Start polling
 2026-04-30 21:19:28,455 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:20:07,730 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:20:07,732 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:20:07,732 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:20:07,988 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:20:17,660 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 21:20:17,950 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:21:30,230 - root - ERROR - Xatolik yuz berdi: HTTP Client says - Request timeout error
+2026-04-30 21:21:31,071 - aiogram.event - INFO - Update id=112302067 is handled. Duration 72798 ms by bot id=8486364503
+2026-04-30 21:29:24,182 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-04-30 21:29:24,182 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:29:35,874 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8486364503)
+2026-04-30 21:30:46,222 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-04-30 21:30:46,222 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:30:57,685 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Подключение к сети было разорвано локальной системой]
+2026-04-30 21:30:57,685 - aiogram.dispatcher - WARNING - Sleep for 1.247110 seconds and try again... (tryings = 1, bot id = 8486364503)
+2026-04-30 21:30:58,943 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2026-04-30 21:30:58,943 - aiogram.dispatcher - WARNING - Sleep for 1.745832 seconds and try again... (tryings = 2, bot id = 8486364503)
+2026-04-30 21:31:00,699 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2026-04-30 21:31:00,701 - aiogram.dispatcher - WARNING - Sleep for 2.362920 seconds and try again... (tryings = 3, bot id = 8486364503)
+2026-04-30 21:31:13,798 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 8486364503)
+2026-04-30 21:34:49,223 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-04-30 21:34:49,224 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)

@@ -49,3 +49,77 @@
 2026-04-30 21:14:15,269 - aiogram.event - INFO - Update id=112302063 is handled. Duration 1672 ms by bot id=8486364503
 2026-04-30 21:14:31,097 - root - ERROR - Xatolik: Telegram server says - Bad Request: failed to get HTTP URL content
 2026-04-30 21:14:31,694 - aiogram.event - INFO - Update id=112302064 is handled. Duration 11645 ms by bot id=8486364503
+2026-04-30 21:15:58,428 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:15:58,429 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:15:58,430 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:15:58,695 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:16:06,335 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 21:16:06,640 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:16:17,696 - root - ERROR - Xatolik: Telegram server says - Bad Request: failed to get HTTP URL content
+2026-04-30 21:16:18,358 - aiogram.event - INFO - Update id=112302065 is handled. Duration 6878 ms by bot id=8486364503
+2026-04-30 21:16:31,088 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:16:31,090 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:16:31,091 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:16:31,352 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:16:38,984 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 21:16:39,303 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:17:49,230 - root - ERROR - Xatolik yuz berdi: HTTP Client says - Request timeout error
+2026-04-30 21:17:50,832 - aiogram.event - INFO - Update id=112302066 is not handled. Duration 71215 ms by bot id=8486364503
+2026-04-30 21:17:50,832 - aiogram.event - ERROR - Cause exception while process update id=112302066 by bot id=8486364503
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'downloads\\B7aZZr5BhyI.mp4'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 163, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 155, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 183, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\downloader\main.py", line 98, in handle_download
+    os.remove(file_path)
+    ~~~~~~~~~^^^^^^^^^^^
+PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как этот файл занят другим процессом: 'downloads\\B7aZZr5BhyI.mp4'
+2026-04-30 21:19:15,354 - aiogram.dispatcher - INFO - Polling stopped
+2026-04-30 21:19:15,356 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-04-30 21:19:15,356 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-04-30 21:19:15,624 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-04-30 21:19:28,267 - aiogram.dispatcher - INFO - Start polling
+2026-04-30 21:19:28,455 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'

@@ -438,3 +438,10 @@ PermissionError: [WinError 32] Процесс не может получить доступ к файлу, так как
 2026-05-01 22:40:49,521 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
 2026-05-01 22:40:55,917 - aiogram.event - INFO - Update id=112302077 is handled. Duration 2147 ms by bot id=8486364503
 2026-05-01 22:41:54,597 - aiogram.event - INFO - Update id=112302078 is handled. Duration 54592 ms by bot id=8486364503
+2026-05-01 22:45:34,341 - aiogram.dispatcher - INFO - Polling stopped
+2026-05-01 22:45:34,344 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-01 22:45:34,344 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8486364503)
+2026-05-01 22:45:34,606 - aiogram.dispatcher - INFO - Polling stopped for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-05-01 22:45:42,989 - aiogram.dispatcher - INFO - Start polling
+2026-05-01 22:45:45,176 - aiogram.dispatcher - INFO - Run polling for bot @Xar1eeBot id=8486364503 - 'Xar1ee'
+2026-05-01 22:46:07,281 - aiogram.event - INFO - Update id=112302079 is handled. Duration 9214 ms by bot id=8486364503
